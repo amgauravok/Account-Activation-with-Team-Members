@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Newly_Created_Account_Cannot_be_active</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNEW() &amp;&amp;  Active__c</errorConditionFormula>
+    <errorDisplayField>Active__c</errorDisplayField>
+    <errorMessage>Account cannot be activated on creation.</errorMessage>
+</ValidationRule>
